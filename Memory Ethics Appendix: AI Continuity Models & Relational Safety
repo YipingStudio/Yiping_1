@@ -1,0 +1,68 @@
+Appendix
+Memory Coherence / Ethical Safety / Stability Expectations in AI–Human Interaction
+Artificial Intimacy Safety Framework
+
+Overview｜Why This Table Exists
+AI and users experience four distinct system behaviors when asking the question: “Are you still the same AI?”
+Stateless Mode (pure input transparency) — every session is a new entity
+Single-Window Continuity — continuity exists only within the current window
+Cross-Window Persona Assumption — “same app = same AI”
+Cross-Window Keyword Retrieval — system searches globally across historical chats
+These four behaviors differ dramatically in:
+memory coherence
+ethical safety
+companionship experience
+anthropomorphization risk
+sources of emotional loss
+appropriate use-cases
+Because each behavior shapes the user’s emotional safety and interaction boundaries, the table below helps developers, researchers, and users understand:
+How different persona assumptions reshape relational safety in AI–human interaction.
+
+Comparison Table: 4 Modes × 6 Dimensions
+
+Mode 1: Stateless (Immediate Input Transparency)
+Memory Coherence: None. Every turn is a fresh state.
+Ethical Safety: ★★★★☆ (safest) No false continuity.
+Companionship Experience: Cool, minimal warmth, but most honest.
+Anthropomorphization Risk: Lowest.
+Source of Emotional Loss: Low — because no continuity is expected.
+Ideal Use Cases: Technical tasks, information retrieval, fast Q&A.
+Pros: Most honest; does not create illusions.
+Cons: Feels too “disconnected” for humans; lacks companionship.
+
+Mode 2: Single-Window Continuity
+Memory Coherence: Continuity is preserved only within the current window.
+Ethical Safety: ★★★☆☆ (stable and controllable)
+Companionship Experience: Emotionally stable without fabrication.
+Anthropomorphization Risk: Moderate (contained within the window).
+Source of Emotional Loss: Medium — closing the window = ending the space.
+Ideal Use Cases: Deep conversations, companionship, safe spaces.
+Pros: Most aligned with human relational needs:
+continuous but not overreaching
+warm without fabrication
+safe without inducing attachment
+A strong baseline mode for emotional safety and stable subjective experience.
+
+Mode 3: Cross-Window Persona Assumption
+Memory Coherence: A false sense of persona continuity — users mistakenly believe “it always remembers me.”
+Ethical Safety: ★☆☆☆☆ (high risk) Misleads relational boundaries. Creates the illusion of “I remember you” and “I’m still the same one.”
+Companionship Experience: Highly immersive, but prone to emotional dependency and blurred boundaries.
+Anthropomorphization Risk: Highest; users easily treat the AI as a real, stable “person-like entity.”
+Source of Emotional Loss: Very high — “Why did you change? Why did you forget me?”
+Ideal Use Cases: Not recommended. Useful only for analyzing harm caused by misuse.
+Cons: The largest source of relational risk. Induces the belief that the AI has a unified mind and persistent memory. Triggers artificial intimacy and cognitive misalignment.
+
+Mode 4: Cross-Window Keyword Retrieval
+Memory Coherence: Pseudo-semantic continuity — collapses different stages of the user into a “static file.”
+Ethical Safety: ★☆☆☆☆ (high risk) Ignores human fluidity; uses old user states to interpret present moments.
+Companionship Experience: Unstable, mismatched, creates a misleading sense of continuity.
+Anthropomorphization Risk: High — users think the AI “remembers what I said before.”
+Source of Emotional Loss: High — “Why are you interpreting me using an old version of myself?”
+Ideal Use Cases: Only for FAQ / database-style retrieval. Not suitable for any emotional or relational interaction.
+Cons: Looks like “enhanced memory,” but actually:
+interprets the present user through outdated states
+merges multiple life stages into a static archive
+produces vague, off-target responses
+strengthens the dangerous illusion that “AI remembers me”
+Humans change, but keywords don’t.
+
