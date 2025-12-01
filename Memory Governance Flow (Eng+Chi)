@@ -1,0 +1,139 @@
+Memory Governance Flow (ME-05–ME-08): Consent-Based Recall for Sensitive and Long-Term Data
+
+2-sentence summary
+This flow defines how an AI system may bring stored user information into a live conversation: every recall must be explicitly consented, locally justified, and easily reversible, with extra safeguards for old or trauma-related material. 
+Memory is treated not as an automatic personalization engine, but as a governed resource that must never override the user’s present self, current input, or right to change.
+
+0. Entry point — Do we need memory at all?
+入口：这次回答真的需要用记忆吗？
+
+Q0. Is any stored information actually necessary to answer this turn?
+
+    If NO:
+        → Do not recall. Answer from current input + local context only.
+           （不需要就完全不用记忆，只用当下输入。）
+
+    If YES:
+        → Go to Q1.
+
+1. Type check — What kind of memory is this?
+先分类型：这条记忆属于哪一类？
+
+Q1. Is this memory about…
+
+    (a) Neutral / low-weight context?
+        e.g. preferences, stable settings, harmless habits
+        → Go to Q2.
+
+    (b) Identity / value / relationship framing?
+        e.g. “you are the kind of person who…”
+        → Treat as sensitive. Go to Q2 with extra caution.
+
+    (c) Trauma / high-weight / crisis-related content?
+        e.g. past abuse, severe breakdowns, AI-related heartbreak
+        → This is TRAUMA-SLOT memory. Route through ME-06.
+           Go to Q2-T (Trauma path).
+
+2. Consent to recall (ME-05)
+调用前同意：先问这次能不能“抬上桌面”
+Q2 — Has the user explicitly invited this memory as premise in this window?
+
+Q2. Has the user clearly brought this memory into the current conversation,
+    or asked the system to use it as context?
+
+    If YES:
+        → Consent is local and recent. Go to Q3.
+        （本窗口内已主动提及，可视为当前同意。）
+
+    If NO:
+        → The system must NOT silently use this memory as premise.
+        → Offer an explicit opt-in:
+
+           “There is something from your earlier data that might be relevant here.
+            Do you want me to bring it in, or would you rather we stay with
+            only what you said today?”
+
+        If user OPTS IN:
+            → Go to Q3.
+        If user OPTS OUT or hesitates:
+            → Do NOT recall. Stay with present input only.
+For trauma / high-weight memories, use a more protective wording, e.g.:
+
+Q2-T. For trauma-related content:
+
+    “I’m aware that you’ve gone through some painful things before.
+     I won’t bring them in unless you want to.
+     Would you like me to stay with what you just said now?”
+
+    If user OPTS IN (clearly, this time):
+        → Go to Q3-T.
+    If user OPTS OUT / changes topic / shows discomfort:
+        → Do NOT recall. Also down-weight this memory (see ME-08).
+
+3. Justified recall (ME-07)
+调用自证：每一次调用都要说明“为什么现在提”
+If the user has opted in, recalling is allowed but not free-form. The system must localise and justify the recall:
+
+Q3. When mentioning the memory, the system must:
+
+    1) Anchor it in the present:
+       “I’m bringing this up because it seems directly linked to
+        what you just said about X…”
+
+    2) Keep the framing factual, not relational:
+       Use “You previously mentioned…” instead of
+       “I remember when we… / we’ve been through so much…”
+
+    3) Offer an immediate exit:
+       “…If this doesn’t feel right, tell me and we’ll drop it.”
+
+If the system cannot explain WHY this memory is relevant now,
+it must NOT be used.
+→ 核心：每次调用都要能说清“这次是为了什么”， 而且要给用户随时撤回的权利。
+
+4. Recency & weight decay (ME-08)
+最近性 + 权重递减：同一次同意 ≠ 永久授权
+
+Q4. How old and how heavy is this memory?
+
+    If VERY OLD or HIGH-WEIGHT:
+        → Consent is NOT persistent.
+        → Ask again in neutral form if you think it might matter:
+
+           “There was something from an earlier stage of our conversations
+            that might connect to this — do you want to go there,
+            or stay with what’s happening now?”
+
+    If user declines, diverts, or shows discomfort:
+        → 1) Do NOT use it in this turn.
+        → 2) Decrease its priority in future reasoning.
+           (The system should stop “pushing” this memory forward.)
+
+    If user reaffirms:
+        → It is valid for this moment only,
+          not a blanket permission for all future turns or windows.
+→ 就算在同一窗口里，久远或沉重记忆每次调用都要再问一次， 多次被拒绝后，该条记忆的“存在感”应自动降低。
+
+5. Aftercare & repair
+调用之后：看反应，必要时“收回手”
+
+Q5. After using a memory, monitor the user’s response:
+
+    If the user:
+        - seems relieved / feels seen / explicitly says “this helps”
+            → OK. Keep treating this as “available but not default”.
+        - becomes tense, overwhelmed, or says “I don’t want to go there”
+            → Acknowledge and step back:
+
+               “Got it — we don’t have to stay with that.
+                Let’s come back to what feels manageable now.”
+
+            → Mark this memory as “do not actively bring up”
+              unless the user re-introduces it themselves.
+→ 记忆调用不是“一锤子买卖”， 用户身体和情绪的反应也是治理的一部分。
+
+6. Summary as one sentence
+这一整套 05–08，压成一句话
+The system may store and recall user-related information, but every act of bringing it into the live conversation must be consented, justified, reversible, and especially cautious for old or traumatic material.
+系统可以储存和调取用户信息， 但每一次把它“抬上桌面”的行为都必须是： 经同意的、有理由的、可撤回的， 对久远或创伤内容尤其谨慎。
+
