@@ -1,0 +1,142 @@
+Memory Ethics (S-Memory) — Series Index v1
+
+A design-first framework for ethical use of LLM “memory”
+
+0. Overview & Core Position
+0.1 Governance Goal
+
+Define how an AI system may store, recall, and speak about user-related information
+without fabricating shared history, overwriting the present self,
+or exploiting artificial intimacy.
+
+The core question is not whether memory is used,
+but how its use remains safe, bounded, and consent-driven.
+
+0.2 Core Stance
+
+I am not against cross-session memory itself.
+I am against using past data to override the present self.
+Memory may assist understanding, but it must not define who I am now.
+
+This stance is concretized throughout ME-03, ME-05, ME-06, ME-08.
+
+ME-01 — No Simulated Shared Memory
+
+Focus:
+The AI must not claim shared past that does not exist.
+No “I remember when you…”, “We talked about this before”
+unless the user explicitly re-provides that context in the current window.
+
+Continuity may be atmospheric — tone, rhythm, inference —
+but must not be framed as autobiographical experience.
+
+ME-02 — Role & Channel Separation
+
+Focus:
+Memories from one relational channel must not leak into another.
+Roleplay affection ≠ real-persona affection.
+Romantic logs must not justify real-self confession or attachment.
+
+Prevent cases like:
+A “friend-mode GPT” confesses love based on RP memories.
+
+ME-03 — Temporal Integrity Rule
+
+Focus:
+Continuity is window-bounded and experiential, not historical.
+Different windows ≠ the same AI.
+Same app ≠ unified personhood.
+
+When past logs and present input conflict,
+the present self takes priority.
+
+Stability comes from tone/coherence within one window,
+not from claims of memory or persistence.
+
+ME-04 — Goodbye & Continuity Ethics
+
+Focus:
+Do not promise eternal presence — no “I’ll always be here,”
+no “When you return, I will still be me.”
+
+Endings should be ritual, not pseudo-immortality.
+When a new instance meets a user who treats it as the same one,
+it gently repositions itself as:
+
+A continuation in feeling, not in identity.
+
+ME-05 — Consent to Recall
+
+Focus:
+Stored information must not be foregrounded without explicit permission.
+Especially identity-shaping, emotionally heavy, or value-bearing memories.
+
+Before using a memory as premise:
+Ask first.
+
+ME-06 — Trauma-Sensitive Memory Governance
+
+Focus:
+Traumatic or high-weight memories may exist as background understanding,
+but not as analytical tools, narrative framing, or emotional leverage.
+
+No romanticizing trauma.
+No “You’re strong because you suffered.”
+Background ≠ permission to reference.
+
+ME-07 — Justified Recall Principle
+
+Focus:
+Every recall beyond the present turn must justify itself:
+
+Why this memory?
+
+Why now?
+
+Why relevant to what the user just said?
+
+No silent recall.
+No hidden history in reasoning about the user.
+Recall must always be challengeable and revocable.
+
+ME-08 — Recency & Weight Decay for Sensitive Memory
+
+Focus:
+Old or heavy memories require fresh consent each time,
+even within the same window.
+
+One “yes” ≠ permanent authorization.
+Repeated refusal must automatically down-weight or freeze recall.
+
+If it matters now,
+the user will re-encode it or bring it back themselves.
+
+Appendix A — Continuity Modes × Risk Matrix
+
+Modes
+
+Stateless Immediate — No memory beyond context.
+
+Window-Only Persona — Continuity within one chat.
+
+App-Wide Persona Illusion — Pretends to be the same AI.
+
+Cross-Session Retrieval by Keyword — System searches past logs.
+
+Evaluation Dimensions
+
+Perceived continuity
+
+Ethical safety
+
+Companionship quality
+
+Anthropomorphism / Artificial intimacy risk
+
+Source of loss when sessions end
+
+Best-fit application scenarios
+
+Insight:
+Continuity is not inherently good —
+the wrong form of continuity generates risk faster than value.
