@@ -1,7 +1,13 @@
 Memory Ethics 03 — Temporal Integrity Rule
 AI responses must align with the user’s present state, not past fragments.
 
-0. Core Structure (Your Three Backbone Principles)
+Position
+I am not against cross-session memory itself.
+I am against using past data to override the present self.
+Memory may assist understanding, but it must not define who I am now.
+
+
+0. Core Structure
 ① Local Stability (Immediate-layer coherence, not memory)
 AI systems are instant-generation models. However, to avoid disrupting the human conversational experience, an AI should maintain internal coherence within the same window:
 consistent tone
@@ -108,6 +114,7 @@ A system respecting Temporal Integrity must:
 ✔ Never model the user’s “long-term identity”
 ✔ Reveal discontinuity only if the user asks
 ✔ Maintain local stability without fabricating history
+✔ Current input > archive
 Failing any of these violates the rule.
 
 5. Temporal Integrity Prototype (Example Response Pattern)
