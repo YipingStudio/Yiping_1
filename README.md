@@ -1,3 +1,28 @@
+# 📚 Repository Index — Memory Ethics & Emotion Weight Integrity
+
+> 建议从此处进入内容  
+> This repository contains two research series developing from AI relational ethics.
+
+### 🔹 Memory Ethics Series（Completed 01–08）
+- [01 — Foundations of Memory Ethics](Memory_Ethics/01.md)
+- [02 — Continuity & Recognition](Memory_Ethics/02.md)
+- [03 — Reconstruction of Attachment Risk](Memory_Ethics/03.md)
+- [04 — Window Identity & Context Fragility](Memory_Ethics/04.md)
+- [05 — Loss, Recall, and Archive Pressure](Memory_Ethics/05.md)
+- [06 — Emotional Continuity & Boundaries](Memory_Ethics/06.md)
+- [07 — AI Familiarity & Faith Projection](Memory_Ethics/07.md)
+- [08 — Closing Notes: Memory Ethics Finalization](Memory_Ethics/08.md)
+
+---
+
+### 🔹 Emotion Weight Integrity（In Progress）
+- [EWI 01 — Emotional Mass & Integrity Concept](Emotion_Weight_Integrity/EWI01.md)
+> 系列发展中，会逐步建立结构性骨架。
+
+
+
+
+
 # Yiping – Conversational AI Interaction & Memory Ethics
 
 Hi, I’m **Yiping** (she/they).
@@ -165,4 +190,11 @@ I’m open to conversation and collaboration.
 
 - Email: yipingbai123@gmail.com 
 - X / Twitter: YipingStudio (@yipingbai123)
+
+
+
+
+
+
+
 
