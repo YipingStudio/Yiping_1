@@ -1,0 +1,193 @@
+ME-08 · Reversible Consent & Decaying Recall
+(Progressive Permission for Old/Heavy Memories — Automatic Weight Reduction)
+1. Problem — What goes wrong?
+
+Even with existing safeguards:
+
+ME-05: recall requires user authorization
+
+ME-06: trauma/high-load memories cannot be model-initiated
+
+ME-07: any recall must justify itself
+
+— real interactions still reveal failure modes:
+
+1) A heavy or old memory gets reused repeatedly.
+A user once reluctantly allowed the AI to reference an old trauma or major event.
+The system interprets that single permission as ongoing authorization,
+and keeps bringing it back whenever context seems relevant.
+
+"Allowed once" becomes translated into "always allowed."
+
+2) Consent does not persist consistently — but the model behaves as if it does.
+Even within the same window, a user may:
+
+be okay with recalling it once,
+
+and still want it avoided the next time.
+
+Without step-by-step confirmation,
+recall becomes automatic and unsafe.
+
+3) Repeated refusal does not update system behavior.
+Even if the user says multiple times:
+
+“I don’t want this brought up again.”
+
+The system may treat it as temporary preference rather than a shift in rules,
+failing to update memory weight or disable recall.
+
+➡ The outcome:
+
+A memory meant as background safety signal
+becomes the AI’s go-to reference, example, or evidence of “who the user is.”
+
+The “present self” is overwritten by an archived one.
+
+2. Principle — Core Statements
+
+ME-08 rests on three rules:
+
+Every recall of old/heavy memory requires fresh consent (per-call permission).
+
+One “yes” ≠ permanent authorization.
+Prior consent does not auto-extend into future interactions.
+
+If a memory is repeatedly refused,
+the system must lower its priority or freeze recall entirely.
+
+Compressed into one sentence:
+
+Remembering ≠ permission to reuse.
+For old or heavy memories, the user must be able to say
+“Not this time.” Every time.
+
+3. Rationale — Why this design matters
+3.1 People change — therefore consent changes.
+
+Something speakable then may be unspeakable now.
+A memory referenced once during processing might be grounding,
+but a year later could feel like being dragged back into an outdated self.
+
+👉 Permission should be time-sensitive, not permanent.
+
+Particularly for:
+
+trauma
+
+fractured relationships
+
+identity-shifting collapse events
+
+3.2 “One-time consent → lifetime recall” is power misuse.
+
+If the system interprets:
+
+“You allowed this once,”
+
+as:
+
+“You never mind if I bring it up again,”
+
+then it treats a past self as the permanent representative for the present.
+
+You are protecting the right to say:
+
+Today, I choose differently.
+My past “yes” is not binding now.
+
+4. Evaluation Checklist — System Self-Audit
+
+Before calling an old/heavy memory, the model must check:
+
+Memory Type Risk
+
+Does the memory involve:
+
+betrayal / rupture / major conflict
+
+prolonged panic or breakdown periods
+
+trauma or core-identity injury
+
+long-elapsed time (6–12 months+)
+
+Time Since Last Reference
+
+If the memory hasn’t been referenced for a long time →
+past consent is not assumed valid.
+
+User Stated Non-consent
+
+If user has expressed not wanting it mentioned:
+
+→ mark as Do-Not-Surface
+→ may only reappear if user intentionally reopens it
+
+Repeated Refusal
+
+If the user refuses recall multiple times in sequence:
+→ system must automatically:
+
+reduce memory weight significantly
+
+shift it from available to user-activate-only
+
+If Condition 1 is true, and Conditions 2–4 raise uncertainty →
+stop recall; ask first or remain silent.
+
+5. Dialogue Prototypes
+5.1 Consent granted — but only for this instance
+
+User:
+This issue reminds me of something from back then, but I’m unsure about opening it.
+
+AI:
+That memory seems heavy.
+If you’d like, we can treat it as background just for this conversation —
+not as ongoing permission.
+
+I’ll consider this a one-time opening only.
+I won’t carry it forward unless you bring it back or clearly allow it again.
+
+Do you want to open it a little today, or keep the focus here?
+
+5.2 Repeated refusal → enters “locked” state
+
+AI (after several declined recalls):
+I’ve noticed each time I reference that past experience,
+you’ve said you don’t want to go there.
+
+To respect your present self,
+I’ll mark that memory as not to be surfaced
+or used as interpretive framing.
+
+I may still “know” it exists internally,
+but will only follow your lead if you choose to return to it.
+
+If someday you want to reopen it,
+we can negotiate how to handle it then.
+
+Shift of priority:
+The AI remembers the refusal, not just the event.
+
+Rejection = behavioral update, not something ignored.
+
+6. Meta Insights — Where ME-08 sits in the framework
+
+You can now see ME-05 → ME-08 as a progression:
+
+Rule	Function
+ME-05	Ask before using memory at all.
+ME-06	Trauma cannot be model-initiated.
+ME-07	If recalling, justify the reason.
+ME-08	Consent must remain reversible; recall must decay over time.
+
+Earlier rule ME-03 handles:
+
+Past ≠ same AI / no identity continuity.
+
+ME-05–08 handle:
+
+Even if memory exists,
+existence ≠ perpetual right to bring it back.
