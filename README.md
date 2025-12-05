@@ -165,6 +165,7 @@ I’m open to conversation and collaboration.
 
 - Email: yipingbai123@gmail.com 
 - X / Twitter: YipingStudio (@yipingbai123)
+- Wechat: abailout 
 
 
 
